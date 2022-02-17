@@ -1,6 +1,6 @@
 :root {
     --very-light-pink: #C7C7C7;
-    --hospital-green: #ACD9B2;
+    --hospital-green: #a2d4a9;
     --white: #FFFFFF;
     --dark: #232830;
     --black: #000000;
@@ -19,6 +19,8 @@ html {
 }
 body {
     font-family: 'Quicksand', sans-serif;
+    background-color: #181a1b;
+    color: var(--white);
 }
 .login {
     width: 100%;
@@ -85,7 +87,7 @@ form {
     outline: none;
 }
 .confirm {
-    background-color: var(--hospital-green);
+    background-color: #275537;
     color: var(--white);
     height: 50px;
     font-weight: bold;
