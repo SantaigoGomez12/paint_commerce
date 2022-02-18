@@ -44,27 +44,16 @@ body {
 .login_containter_img {
     width: 70px;
 }
-.login_containter_logo h2 {
-    font-size: 18px;
-    position: relative;
-    right: 14px;
-}
-.login_containter_logo h2 div {
-    color: var(--hospital-green);
-}
 
-.login_containter_title {
-    font-size: var(--lg);
-    text-align: center;
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 10px;
+}
+.label {
+    font-size: var(--sm);
     margin-bottom: 12px;
-}
-
-.login_containter_sub-title {
-    font-size: var(--md);
-    text-align: center;
-    color: var(--very-light-pink);
-    font-weight: 300;
-    margin-bottom: 30px;
+    font-weight: bold;
 }
 .input {
     border: none;
@@ -81,34 +70,23 @@ body {
     color: var(--white);
     height: 50px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 20px;
 }
-.email_logo_containter {
-    justify-self: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 132px;
-    height: 132px;
-    background-color: rgba(128, 128, 128, 0.089);
-    border-radius: 50%;
-    margin-bottom: 25px;
-}
-.email_logo_containter img {
-    width: 80px;
-}
-
-p {
-    margin-top: 10px;
-    font-size: var(--sm);
-    text-align: center;
-}
-p span {
-    color: var(--very-light-pink);
-}
-p a {
+a {
+    margin-top: 15px;
     color: var(--hospital-green);
     text-decoration: none;
+    text-align: center;
+    font-size: var(--sm);
+}
+.inscribirse {
+    background-color: transparent;
+    border: solid #a2d4a92a 1px;
+    color: var(--hospital-green);
+    bottom: 0;
+    position: absolute;
+    width: inherit;
+    justify-self: center;
 }
 
 /* Desktop */
@@ -119,5 +97,14 @@ p a {
     }
     .login_containter_logo {
         display: none;
+    }
+    .inscribirse {
+        background-color: transparent;
+        border: solid #a2d4a92a 1px;
+        color: var(--hospital-green);
+        margin-top: 70px;
+        bottom: 0;
+        position: relative;
+        width: inherit;
     }
 }
