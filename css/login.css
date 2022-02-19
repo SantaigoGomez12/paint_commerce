@@ -83,10 +83,8 @@ a {
     background-color: transparent;
     border: solid #a2d4a92a 1px;
     color: var(--hospital-green);
-    bottom: 0;
-    position: absolute;
-    width: inherit;
-    justify-self: center;
+    margin-top: auto;
+    width: 300px;
 }
 
 /* Desktop */
@@ -94,6 +92,7 @@ a {
 @media (min-width: 800px) {
 	.login_containter {
         width: 500px;
+        align-self: flex-end;
     }
     .login_containter_logo {
         display: none;
@@ -102,9 +101,7 @@ a {
         background-color: transparent;
         border: solid #a2d4a92a 1px;
         color: var(--hospital-green);
-        margin-top: 70px;
-        bottom: 0;
-        position: relative;
-        width: inherit;
+        width: 480px;
+        margin-top: 1px;
     }
 }
