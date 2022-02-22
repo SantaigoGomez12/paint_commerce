@@ -1,0 +1,45 @@
+@import url(main_structure.css);
+
+main ul {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 40px;
+    list-style: none;
+}
+
+li {
+    font-size: var(--md);
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.divisor_list {
+    margin-bottom: 60px;
+    margin-top: 5px;
+}
+
+.final_link, p {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+.final_link {
+    color: var(--hospital-green);
+}
+
+@media (min-width: 600px) {
+    .first_section {
+        position: relative;
+        right: 15px;
+    }
+    main ul {
+        align-items: center;
+    }
+}

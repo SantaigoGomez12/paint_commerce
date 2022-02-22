@@ -1,27 +1,14 @@
-:root {
-    --very-light-pink: #C7C7C7;
-    --hospital-green: #a2d4a9;
-    --white: #FFFFFF;
-    --dark: #232830;
-    --black: #000000;
-    --text-input-field: #F7F7F7;
-    --sm: 12px;
-    --md: 16px;
-    --lg: 18px;
+@import url(main_structure.css);
+
+
+/* .header_desktop */
+
+.header_desktop {
+    display: none;
 }
-* {
-	box-sizing: border-box; /* calcula dimensiones para mantener el tamaño */
-	padding: 0;
-	margin: 0;
-}
-html {
-	font-size: 62.5%;
-}
-body {
-    font-family: 'Quicksand', sans-serif;
-    background-color: #181a1b;
-    color: var(--white);
-}
+
+/* Main */
+
 .main_containter {
     width: 100%;
     height: 100vh;
@@ -75,5 +62,122 @@ body {
     }
     .card_extra img {
         width: 35px;
+    }
+}
+
+/* Header */
+
+@media (min-width: 1050px) {
+    .header_desktop {
+        display: block;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: solid rgba(128, 128, 128, 0.178) 1px;
+        box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.137);
+        margin-bottom: 30px;
+    }
+    .first_section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first_section ul {
+        display: flex;
+        list-style: none;
+    }
+    .first_section ul li {
+        font-size: var(--md);
+        margin: auto 5px;
+    }
+    .first_section ul li a{
+        text-decoration: none;
+        color: var(--very-light-pink);
+        opacity: 0.5;
+    }
+    .first_section ul li a:hover {
+        text-decoration: underline;
+        color: var(--hospital-green);
+        opacity: 1;
+    }
+    .first_section ul li:first-child {
+        margin-left: 40px;
+        background-color: var(--hospital-green);
+        border-radius: 5px;
+        padding: 5px 8px;
+        font-weight: bold;
+        opacity: 1;
+    }
+    .first_section ul li:first-child a {
+        color: var(--white);
+        opacity: 1;
+    }
+
+    .login_containter_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login_containter_logo strong {
+        color: var(--hospital-green);
+    }
+    .login_containter_logo img {
+        width: 40px;
+    }
+    .second_section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .second_section img {
+        width: 40px;
+        margin: 0 20px;
+    }
+    .second_section .details__titulo {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        color: var(--very-light-pink);
+    }
+    .second_section .details__titulo:hover {
+        color: var(--hospital-green);
+        text-decoration: underline;
+    }
+    .second_section .details__titulo p {
+        margin-left: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        color: var(--hospital-green);
+    }
+    .details__paginas {
+        padding: 10px 15px;
+        width: 180px;
+        margin-top: 20px;
+        margin-left: 4rem;
+        position: absolute;
+        list-style: none;
+        background-color: #2b2d2e;
+        border-radius: 5px;
+    }
+    .details__paginas li {
+        text-align: end;
+        margin: 15px 0;
+    }
+    .details__paginas hr {
+        margin-top: 30px;
+    }
+    .details__paginas a {
+        text-decoration: none;
+        font-size: var(--md);
+        color: var(--white);
+        font-weight: bold;
+    }
+
+    ul li .final_link {
+        color: var(--hospital-green);
+        font-size: var(--sm);
     }
 }
