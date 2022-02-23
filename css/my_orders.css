@@ -1,0 +1,70 @@
+@import url(main_structure.css);
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+main h1 {
+    margin: 30px 0px;
+    font-size: var(--lg);
+}
+p {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+.initial_card img {
+    width: 100px;
+}
+.total_card {
+    width: 280px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.total_card p:first-child {
+    font-weight: 600;
+    font-size: var(--md);
+    color: var(--white);
+}
+.total_card > p {
+    font-size: var(--md);
+    font-weight: 600;
+}
+main .card_prducts {
+    background-color: transparent;
+    padding: 10px;
+}
+
+.initial_card {
+    display: flex;
+    align-items: center;
+}
+.initial_card img {
+    width: 70px;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.total_card_second {
+    display: flex;
+    align-items: center;
+}
+.total_card_second img {
+    margin-left: 15px;
+}
+
+@media (min-width: 800px) {
+    main h1 {
+        margin-top: 120px;
+    }
+    .total_card {
+        width: 500px;
+    }
+    .initial_card img {
+        width: 80px;
+    }
+}
