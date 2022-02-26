@@ -1,0 +1,218 @@
+@import url(./main_structure.css);
+
+/* Header  mobile */
+
+.header_desktop {
+    display: none;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.header_nav .login_containter_logo {
+    display: flex;
+    align-items: center;
+}
+.login_containter_logo img {
+    width: 30px;
+}
+.login_containter_logo h2 {
+    font-size: var(--sm);
+}
+.login_containter_logo h2 strong {
+    color: var(--hospital-green);
+}
+
+/* Products container */
+.image_container img:first-child {
+    width: 100%;
+}
+.image_container .close {
+    position: absolute;
+    right: 1px;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    color: var(--white);
+    margin: 3px;
+}
+.image_container ul {
+    display: flex;
+    justify-content: center;
+}
+.product_containter ul li {
+    background-color: var(--very-light-pink);
+    width: 6px;
+    height: 6px;
+    margin: 8px 6px;
+    border-radius: 50%;
+    list-style-type: none;
+    cursor: pointer;
+}
+.product_containter ul li:first-child {
+    background-color: var(--hospital-green);
+}
+
+.description {
+    padding: 5px 15px;
+}
+
+.description h3 {
+    font-size: var(--lg);
+    font-weight: 100;
+}
+.description h4 {
+    font-size: var(--md);
+    color: var(--very-light-pink);
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.description p {
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+}
+.button_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 300px;
+    border: none;
+    background-color: var(--hospital-green);
+    border-radius: 5px;
+    padding: 10px;
+}
+.button_card img {
+    width: 30px;
+}
+.button_card p {
+    font-size: var(--lg);
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+
+@media (min-width: 600px) {
+    main {
+        width: 500px;
+        background-color: rgba(128, 128, 128, 0.062);
+        position: absolute;
+        right: 0;
+    }
+    .header_nav {
+        display: none;
+    }
+}
+
+@media (min-width: 1050px) {
+    .header_nav {
+        display: none;
+    }
+    .header_desktop {
+        display: block;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: solid rgba(128, 128, 128, 0.178) 1px;
+        box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.137);
+    }
+    .first_section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .first_section ul {
+        display: flex;
+        list-style: none;
+    }
+    .first_section ul li {
+        font-size: var(--md);
+        margin: auto 5px;
+    }
+    .first_section ul li a{
+        text-decoration: none;
+        color: var(--very-light-pink);
+        opacity: 0.5;
+        padding: 5px;
+    }
+    .first_section ul li a:hover {
+        border: 1px var(--hospital-green) solid;
+        opacity: 1;
+        border-radius: 5px;
+    }
+    .first_section ul li:first-child {
+        margin-left: 20px;
+    }
+
+    .login_containter_logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login_containter_logo strong {
+        color: var(--hospital-green);
+    }
+    .login_containter_logo img {
+        width: 40px;
+    }
+    .second_section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .second_section img {
+        width: 40px;
+        margin: 0 20px;
+    }
+    .second_section .details__titulo {
+        display: flex;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        color: var(--very-light-pink);
+    }
+    .second_section .details__titulo:hover {
+        color: var(--hospital-green);
+        text-decoration: underline;
+    }
+    .second_section .details__titulo p {
+        margin-left: 5px;
+        font-size: 15px;
+        font-weight: bold;
+        color: var(--hospital-green);
+    }
+    .details__paginas {
+        padding: 10px 15px;
+        width: 180px;
+        margin-top: 20px;
+        margin-left: 4rem;
+        position: absolute;
+        list-style: none;
+        background-color: #2b2d2e;
+        border-radius: 5px;
+        z-index: 5;
+    }
+    .details__paginas li {
+        text-align: end;
+        margin: 15px 0;
+    }
+    .details__paginas hr {
+        margin-top: 30px;
+    }
+    .details__paginas a {
+        text-decoration: none;
+        font-size: var(--md);
+        color: var(--white);
+        font-weight: bold;
+    }
+
+    ul li .final_link {
+        color: var(--hospital-green);
+        font-size: var(--sm);
+    }
+}
